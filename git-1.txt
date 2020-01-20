@@ -1,0 +1,56 @@
+Branching in GIT
+=====================
+We can create multiple branches to parallely work on different part of the development project
+Eg developer can create a branch for weappdev and mob_appdev
+parallely he can create code on these branches for those modules
+After creating the code seperately he can merge with the main branch
+
+To find the list of branches available
+git branch
+To find the list of all branches(remote as well as local)
+git branch -a
+To create a branch
+git branch branchname
+To switch into a branch
+git checkout branchname
+To delete a branch
+git branch -d branchname
+To delete a remote branch
+git branch -dr branchname
+
+Note:By default git performs its activities on the master branch
+
+
+Downloading the repository from git
+======================================
+It can be done in 3 ways
+git clone
+git fetch
+git pull
+
+git clone will download the complete repository into any folder and also this folder is initilized as git repositoty
+Syntax: git clone git_repo_url
+ To get the above url 
+open github.com
+login into you account
+click on repositories tab
+click on the reposity that we should download
+click on "clone or download" button
+copy the url
+use it with the above command
+
+git fetch will downlaod only the recent changes and store them on a seperate branch..to view these changes we can switch into that branch
+
+1 git branch -a : this will list all branches local and remote
+2 git checkout remote_branchname
+3 view the changes that we performed in github
+5 to merge this branch with master branch
+  checkout on the master branch
+  
+   git checkout master
+   git merge remote_branchname
+
+git pull will downlaod the changes but it will automatically merge
+with the master branch
+
+
